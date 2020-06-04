@@ -62,7 +62,7 @@ def get_jobs(keyword, num_jobs, verbose, slp_time, path):
                     job_description = driver.find_element_by_xpath('.//div[@class="jobDescriptionContent desc"]').text
                     collected_successfully = True
                 except:
-                    time.sleep(5)
+                    time.sleep(1.5)
 
             try:
                 salary_estimate = driver.find_element_by_xpath('.//div[@class="salary"]').text
